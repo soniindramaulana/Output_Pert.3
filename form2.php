@@ -1,0 +1,33 @@
+<?php
+echo "BERIKUR ISI DARI FILE TUJUAN: ";
+echo "<br>";
+$name= $_POST["namasaya"];
+$NIM=$_POST["Nim"];
+$TB=$_POST["Tb"];
+$BB=$_POST["Bb"];
+$pgl1=$_POST["P1"];
+$pgl2=$_POST["P2"];
+$pgl3=$_POST["P3"];
+echo "Nama : ". $name;
+echo "<br>";
+echo "NIM : ".$NIM;
+echo "<br>";
+echo "Tinggi Badan : ".$TB;
+echo "<br>";
+echo "Berat Badan : ".$BB;
+echo "<br>";
+echo "Panggilan Pertama: ".$pgl1;
+echo "<br>";
+echo "Panggilan Kedua : ".$pgl2;
+echo "<br>";
+echo "Panggilan Ketiga : ".$pgl3;
+echo "<br>";
+session_start();
+$_SESSION["nama"]=$name;
+$_SESSION["nim"]=$NIM;
+$_SESSION["tb"]=$TB;
+$_SESSION["bb"]=$BB;
+$_SESSION["panggil1"]=$pgl1;
+$_SESSION["panggil2"]=$pgl2;
+$_SESSION["panggil3"]=$pgl3;
+?>
